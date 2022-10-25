@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "c5059332-acfa-4e81-9ec3-4304fd5d9e8e",
+    "name": "serverless-sam-cdk",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "Create Pirate Costume Order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"items\": [\n        {\n            \"productId\": 111,\n            \"quantity\": 2\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://yourRestApiId.execute-api.eu-west-1.amazonaws.com/prod/orders/",
+          "protocol": "https",
+          "host": [
+            "yourRestApiId",
+            "execute-api",
+            "eu-west-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "orders", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Pirate Costume Order",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://yourRestApiId.execute-api.eu-west-1.amazonaws.com/prod/orders/2495da95-6b14-4e1d-a213-7ea98ed6cb17",
+          "protocol": "https",
+          "host": [
+            "yourRestApiId",
+            "execute-api",
+            "eu-west-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "orders", "2495da95-6b14-4e1d-a213-7ea98ed6cb17"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
